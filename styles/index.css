@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+html {
+	background-color: #e7dfc9;
+	color: #11041b;
+	background: 
+		radial-gradient(circle at 50% 50%, rgba(235, 216, 180, 0.7), rgba(219, 179, 92, 0.7)),
+		url("data:image/svg+xml,%3Csvg viewBox='0 0 700 700' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+	overflow: hidden;
+}
+
+header {
+	min-height: 4rem;
+	background-color: #170129cc;
+	background-image: linear-gradient(0deg, rgba(38,4,71,0.4) 0%, rgba(32, 1, 63, 0.8) 40%);
+	box-shadow: 0 0 12px #0f001d;
+	margin-left: -1em;
+	margin-right: -1em;
+	padding: 0 1em;
+
+	h1 {
+		color: #fff;
+		font-weight: 400;
+	}
+}
+
+.band {
+    display: flex;
+    flex: 0 1;
+    justify-content: center;
+}
+
+.band .content {
+    display: flex;
+    flex: 1; 
+    padding: 1em;
+    max-width: 192rem;
+}
+
+header.band .content {
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+}
+
+p, a {
+    line-height: 1.5em;
+}
+
+a, a:visited {
+    color: #024ca0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+.times {
+	font-weight: 100;
+	color: #860642;
+}
+
+.ice {
+	filter: blur(2.5px) grayscale(30%) brightness(130%);
+	opacity: .4;
+	transform: scale(.8);
+	pointer-events: none;
+}
+
+/* tab */
+
+.section {
+	display: flex;
+}
+
+.bar {
+	display: flex;
+	position: relative;
+	margin-bottom: 96px;
+	padding-left: 16px;
+	border-left: 1px solid rgba(44, 1, 56, 1);
+	border-right: 1px solid rgba(44, 1, 56, 1);
+	background-color: #682c041e;
+	background-image: linear-gradient(180deg, rgba(44, 1, 56,1) 0%, rgba(44, 1, 56,1) 1px, rgba(44, 1, 56,0) 1px, 
+				rgba(44, 1, 56,0) 21px, rgb(44, 1, 56, 1) 21px, rgba(44, 1, 56,1) 23px, rgba(44, 1, 56,0) 23px,
+				rgba(44, 1, 56,0) 43px, rgba(44, 1, 56,1) 43px, rgba(44, 1, 56,1) 45px, rgba(44, 1, 56,0) 45px,
+				rgba(44, 1, 56,0) 65px, rgba(44, 1, 56,1) 66px, rgba(44, 1, 56,1) 68px, rgba(44, 1, 56,0) 68px,
+				rgba(44, 1, 56,0) 86px, rgba(44, 1, 56,1) 86px, rgba(44, 1, 56,1) 89px, rgba(44, 1, 56,0) 89px,
+				rgba(44, 1, 56,0) 108px, rgba(44, 1, 56,1) 108px, rgba(44, 1, 56,1) 112px, rgba(44, 1, 56,0) 112px);
+}
+
+.tab-content {
+	height: calc(100vh - 3rem);
+	transition: all .4s ease;
+	background-image: url(../images/music_notes.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block !important;
+	overflow: auto;
+}
+
+.tab-inner-content {
+	flex-wrap: wrap;
+	display: flex;
+	align-items: flex-start;
+	margin-top: 32px;
+}
+
+.tab-section {
+	height: 112px;
+	position: relative;
+}
+
+.tab {
+	position: absolute;
+	left: 0;
+	background-color: #24034e;
+	box-shadow: 0 0 6px #24084966, 0 0 11px #24084922;
+	border-radius: 100px;
+	color: #ffffff;
+	width: 28px;
+	height: 28px;
+	font-size: 22px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translate(0, -50%);
+}
+
+.e {
+	top: 0px;
+}
+
+.b {
+	top: 22px;
+}
+
+.g {
+	top: 44px;
+}
+
+.d {
+	top: 66px;
+}
+
+.a {
+	top: 87px;
+}
+
+.ee {
+	top: 110px;
+}
+
+.harmonic {
+	font-weight: 300;
+}
+
+.bar.repeat-end {
+	border-right: 4px solid rgb(84, 0, 107);
+	height: 100%;
+	padding-right: 32px;
+}
+
+.bar.repeat-start {
+	border-left: 4px solid rgb(84, 0, 107);
+	height: 100%;
+	padding-left: 32px;
+}
+
+.dot {
+	position: absolute;
+	background-color: rgb(89, 0, 114);
+	border-radius: 100px;
+	height: 7px;
+	width: 7px;
+	
+}
+
+.repeat-end .dot {
+	right: 12px;
+}
+
+.repeat-start .dot {
+	left: 12px;
+}
+
+.top-dot {
+	top: 30px;
+}
+
+.bottom-dot {
+	bottom: 30px;
+}
+
+@media screen and (max-width: 56rem) {
+	html {
+		font-size: 12px;
+	}
+
+	header h1 {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 40rem) {
+
+}
+

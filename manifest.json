@@ -1,0 +1,23 @@
+{
+    "name": "Shred!",
+    "short_name" : "Shred!",
+    "start_url": "https://rx-mikkel.github.io/shred/",
+    "scope" : "/",
+    "icons": [
+        {
+            "src": "./images/wod_192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/wod_512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#860642",
+    "background_color": "#04010d",
+    "display": "standalone",
+    "orientation": "any",
+    "description": "Get in guitar shape"
+ }
