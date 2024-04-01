@@ -14,6 +14,10 @@
 .settings {
     background-color: rgb(13, 0, 24);
 
+    .content {
+        flex-direction: column;
+    }
+
     .tab-section {
         min-width: 6rem;
         height: 336px;
@@ -28,7 +32,7 @@
     .bar {
         display: flex;
         position: relative;
-        margin-bottom: 96px;
+        margin-bottom: 0;
         padding-left: 16px;
         border-left: 1px solid rgba(44, 1, 56, 1);
         border-right: 1px solid rgba(44, 1, 56, 1);
