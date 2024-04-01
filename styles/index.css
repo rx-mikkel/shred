@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import './settings.css';
+
 
 *,
 *::before,
@@ -30,7 +32,7 @@ html {
 header {
 	min-height: 4rem;
 	background-color: #170129cc;
-	background-image: linear-gradient(0deg, rgba(38,4,71,0.4) 0%, rgba(32, 1, 63, 0.8) 40%);
+	background-image: linear-gradient(0deg, rgba(38,4,71,0.6) 0%, rgba(24, 1, 48, 0.8) 45%);
 	box-shadow: 0 0 12px #0f001d;
 	margin-left: -1em;
 	margin-right: -1em;
@@ -39,6 +41,11 @@ header {
 	h1 {
 		color: #fff;
 		font-weight: 400;
+		margin: 0;
+	}
+
+	&.dark {
+		background-image: linear-gradient(0deg, rgb(10, 0, 19) 0%, rgba(12, 1, 24, 1) 40%);
 	}
 }
 
@@ -56,9 +63,9 @@ header {
 }
 
 header.band .content {
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
 }
 
 p, a {
@@ -88,6 +95,16 @@ h1 {
 	opacity: .4;
 	transform: scale(.8);
 	pointer-events: none;
+}
+
+button {
+	color:rgba(26, 2, 49, 0.8);
+	background-color: #e9d7a7;
+	border: none;
+	padding: 0.5rem 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 4px;
 }
 
 /* tab */

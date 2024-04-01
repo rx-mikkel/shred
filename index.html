@@ -11,13 +11,138 @@
 		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 		<link rel="manifest" href="manifest.json" />
 	</head>
-	<body>
-		<header class="band">
+	<body x-data="{ toolsMenuOpen: $persist(true) }">
+		<header class="band" :class="{ 'dark' : toolsMenuOpen === true }">
 			<div class="content">
-				<h1>[Select]</h1>
+				<div>
+					<h1>[Select]</h1>
+				</div>
+				<div>
+					<button title="Tools" class="settingsButton" :class="{ 'transparent' : toolsMenuOpen === true }" x-on:click="toolsMenuOpen = true">Tools</button>
+				</div>
 			</div>
 		</header>
-		<div class="band">
+		<div class="band settings" x-show="toolsMenuOpen">
+			<div class="content">
+				<div class="allChords">
+					<div class="section">
+						<div class="bar">
+							<div class="tab-section">
+								<div class="tab ee eNote">E</div>
+								<div class="tab a aNote">A</div>
+								<div class="tab d dNote">D</div>
+								<div class="tab g gNote">G</div>
+								<div class="tab b bNote">B</div>
+								<div class="tab e eNote">E</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee fNote">F</div>
+								<div class="tab a asNote">A# B𝇒</div>
+								<div class="tab d dsNote">D# E𝇒</div>
+								<div class="tab g gsNote">G# A𝇒</div>
+								<div class="tab b cNote">C</div>
+								<div class="tab e fNote">F</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee fsNote">F# G𝇒</div>
+								<div class="tab a bNote">B</div>
+								<div class="tab d eNote">E</div>
+								<div class="tab g aNote">A</div>
+								<div class="tab b csNote">C# D𝇒</div>
+								<div class="tab e fsNote">F# G𝇒</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee gNote">G</div>
+								<div class="tab a cNote">C</div>
+								<div class="tab d fNote">F</div>
+								<div class="tab g asNote">A# B𝇒</div>
+								<div class="tab b dNote">D</div>
+								<div class="tab e gNote">G</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee gsNote">G# A𝇒</div>
+								<div class="tab a csNote">C# D𝇒</div>
+								<div class="tab d fsNote">F# G𝇒</div>
+								<div class="tab g bNote">B</div>
+								<div class="tab b dsNote">D# E𝇒</div>
+								<div class="tab e gsNote">G# A𝇒</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee aNote">A</div>
+								<div class="tab a dNote">D</div>
+								<div class="tab d gNote">G</div>
+								<div class="tab g cNote">C</div>
+								<div class="tab b eNote">E</div>
+								<div class="tab e aNote">A</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee asNote">A# B𝇒</div>
+								<div class="tab a dsNote">D# E𝇒</div>
+								<div class="tab d gsNote">G# A𝇒</div>
+								<div class="tab g csNote">C# D𝇒</div>
+								<div class="tab b fNote">F</div>
+								<div class="tab e asNote">A# B𝇒</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee bNote">B</div>
+								<div class="tab a eNote">E</div>
+								<div class="tab d aNote">A</div>
+								<div class="tab g dNote">D</div>
+								<div class="tab b fsNote">F# G𝇒</div>
+								<div class="tab e bNote">B</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee cNote">C</div>
+								<div class="tab a fNote">F</div>
+								<div class="tab d asNote">A# B𝇒</div>
+								<div class="tab g dsNote">D# E𝇒</div>
+								<div class="tab b gNote">G</div>
+								<div class="tab e cNote">C</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee csNote">C# D𝇒</div>
+								<div class="tab a fsNote">F# G𝇒</div>
+								<div class="tab d bNote">B</div>
+								<div class="tab g eNote">E</div>
+								<div class="tab b gsNote">G# A𝇒</div>
+								<div class="tab e csNote">C# D𝇒</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee dNote">D</div>
+								<div class="tab a gNote">G</div>
+								<div class="tab d cNote">C</div>
+								<div class="tab g fNote">F</div>
+								<div class="tab b aNote">A</div>
+								<div class="tab e dNote">D</div>
+							</div>
+
+							<div class="tab-section">
+								<div class="tab ee dsNote">D# E𝇒</div>
+								<div class="tab a gsNote">G# A𝇒</div>
+								<div class="tab d csNote">C# D𝇒</div>
+								<div class="tab g fsNote">F# G𝇒</div>
+								<div class="tab b asNote">A# B𝇒</div>
+								<div class="tab e dsNote">D# E𝇒</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="saveSettings">
+					<button x-on:click="toolsMenuOpen = false">Close</button>
+				</div>
+			</div>
+		</div>
+		<div class="band" :class="{ 'ice' : toolsMenuOpen === true }">
 			<div class="content tab-content">
 				<h1>In the Hall of the Mountain King</h1>
 				<div class="tab-inner-content">
