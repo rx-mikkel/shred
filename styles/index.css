@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 @import './settings.css';
-
+@import './notes.css';
 
 *,
 *::before,
@@ -27,6 +27,14 @@ html {
 		radial-gradient(circle at 50% 50%, rgba(235, 216, 180, 0.7), rgba(219, 179, 92, 0.7)),
 		url("data:image/svg+xml,%3Csvg viewBox='0 0 700 700' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 	overflow: hidden;
+
+	--colorA: rgb(207, 5, 83);
+    --colorB: rgb(214, 130, 20);
+    --colorC: rgb(190, 202, 13);
+    --colorD: rgb(7, 161, 66);
+    --colorE: rgb(7, 67, 95);
+    --colorF: rgb(22, 11, 172);
+    --colorG: #24034e;
 }
 
 header {

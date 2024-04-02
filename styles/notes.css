@@ -1,0 +1,254 @@
+.ee, .e {
+
+    &.t0, &.t12 {
+        background-color: var(--colorE)
+    }
+
+    &.t1 {
+        background-color: var(--colorF)
+    }
+
+    &.t2 {
+        background: linear-gradient(135deg, var(--colorF) 24%, var(--colorG) 76%);
+    }
+
+    &.t3 {
+        background-color: var(--colorG)
+    }
+
+    &.t4 {
+        background: linear-gradient(135deg, var(--colorG) 24%, var(--colorA) 76%);
+    }
+
+    &.t5 {
+        background-color: var(--colorA)
+    }
+
+    &.t6 {
+        background: linear-gradient(135deg, var(--colorA) 24%, var(--colorB) 76%);
+    }
+
+    &.t7 {
+        background-color: var(--colorB)
+    }
+
+    &.t8 {
+        background-color: var(--colorC)
+    }
+
+    &.t9 {
+        background: linear-gradient(135deg, var(--colorC) 24%, var(--colorD) 76%);
+    }
+
+    &.t10 {
+        background-color: var(--colorD)
+    }
+
+    &.t11 {
+        background: linear-gradient(135deg, var(--colorD) 24%, var(--colorE) 76%);
+    }
+}
+
+.a {
+
+    &.t0 {
+        background-color: var(--colorA)
+    }
+
+    &.t1 {
+        background: linear-gradient(135deg, var(--colorA) 24%, var(--colorB) 76%);
+    }
+
+    &.t2 {
+        background-color: var(--colorB)
+    }
+
+    &.t3 {
+        background-color: var(--colorC)
+    }
+
+    &.t4 {
+        background: linear-gradient(135deg, var(--colorC) 24%, var(--colorD) 76%);
+    }
+
+    &.t5 {
+        background-color: var(--colorD)
+    }
+
+    &.t6 {
+        background: linear-gradient(135deg, var(--colorD) 24%, var(--colorE) 76%);
+    }
+
+    &.t7 {
+        background-color: var(--colorE)
+    }
+
+    &.t8 {
+        background-color: var(--colorF)
+    }
+
+    &.t9 {
+        background: linear-gradient(135deg, var(--colorF) 24%, var(--colorG) 76%);
+    }
+
+    &.t10 {
+        background-color: var(--colorG)
+    }
+
+    &.t11 {
+        background: linear-gradient(135deg, var(--colorG) 24%, var(--colorA) 76%);
+    }
+}
+
+.d {
+
+    &.t0 {
+        background-color: var(--colorD);
+    }
+
+    &.t1 {
+        background: linear-gradient(135deg, var(--colorD) 24%, var(--colorE) 76%);
+    }
+
+    &.t2 {
+        background-color: var(--colorE);
+    }
+
+    &.t3 {
+        background-color: var(--colorF);
+    }
+
+    &.t4 {
+        background: linear-gradient(135deg, var(--colorF) 24%, var(--colorG) 76%);
+    }
+
+    &.t5 {
+        background-color: var(--colorG)
+    }
+
+    &.t6 {
+        background: linear-gradient(135deg, var(--colorG) 24%, var(--colorA) 76%);
+    }
+
+    &.t7 {
+        background-color: var(--colorA)
+    }
+
+    &.t8 {
+        background: linear-gradient(135deg, var(--colorA) 24%, var(--colorB) 76%);
+    }
+
+    &.t9 {
+        background-color: var(--colorB);
+    }
+
+    &.t10 {
+        background-color: var(--colorC)
+    }
+
+    &.t11 {
+        background: linear-gradient(135deg, var(--colorC) 24%, var(--colorD) 76%);
+    }
+}
+
+.g {
+
+    &.t0, &.t12 {
+        background-color: var(--colorG)
+    }
+
+    &.t1, &.t13 {
+        background: linear-gradient(135deg, var(--colorG) 24%, var(--colorA) 76%);
+    }
+
+    &.t2, &.t14 {
+        background-color: var(--colorA)
+    }
+
+    &.t3, &.t15 {
+        background: linear-gradient(135deg, var(--colorA) 24%, var(--colorB) 76%);
+    }
+
+    &.t4, &.t16 {
+        background-color: var(--colorB)
+    }
+
+    &.t5 {
+        background-color: var(--colorC)
+    }
+
+    &.t6 {
+        background: linear-gradient(135deg, var(--colorC) 24%, var(--colorD) 76%);
+    }
+
+    &.t7 {
+        background-color: var(--colorD)
+    }
+
+    &.t8 {
+        background: linear-gradient(135deg, var(--colorD) 24%, var(--colorE) 76%);
+    }
+
+    &.t9 {
+        background-color: var(--colorE)
+    }
+
+    &.t10 {
+        background-color: var(--colorF)
+    }
+
+    &.t11 {
+        background: linear-gradient(135deg, var(--colorF) 24%, var(--colorG) 76%);
+    }
+}
+
+.b {
+
+    &.t0 {
+        background-color: var(--colorB)
+    }
+
+    &.t1 {
+        background-color: var(--colorC)
+    }
+
+    &.t2 {
+        background: linear-gradient(135deg, var(--colorC) 24%, var(--colorD) 76%);
+    }
+
+    &.t3 {
+        background-color: var(--colorD)
+    }
+
+    &.t4 {
+        background: linear-gradient(135deg, var(--colorD) 24%, var(--colorE) 76%);
+    }
+
+    &.t5 {
+        background-color: var(--colorE)
+    }
+
+    &.t6 {
+        background-color: var(--colorF)
+    }
+
+    &.t7 {
+        background: linear-gradient(135deg, var(--colorF) 24%, var(--colorG) 76%);
+    }
+
+    &.t8 {
+        background-color: var(--colorG)
+    }
+
+    &.t9 {
+        background: linear-gradient(135deg, var(--colorG) 24%, var(--colorA) 76%);
+    }
+
+    &.t10 {
+        background-color: var(--colorA)
+    }
+
+    &.t11 {
+        background: linear-gradient(135deg, var(--colorA) 24%, var(--colorB) 76%);
+    }
+}
