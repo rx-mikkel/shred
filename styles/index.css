@@ -163,9 +163,10 @@ button {
 	position: absolute;
 	left: 0;
 	background-color: #24034e;
-	box-shadow: 0 0 6px #24084966, 0 0 11px #24084922;
+	box-shadow: 0 0 3px #24084966, 0 0 7px #24084975;
 	border-radius: 100px;
-	color: #ffffff;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
 	width: 28px;
 	height: 28px;
 	font-size: 22px;
@@ -205,24 +206,23 @@ button {
 }
 
 .bar.repeat-end {
-	border-right: 4px solid rgb(84, 0, 107);
+	border-right: 4px solid #24034e;
 	height: 100%;
 	padding-right: 32px;
 }
 
 .bar.repeat-start {
-	border-left: 4px solid rgb(84, 0, 107);
+	border-left: 4px solid #24034e;
 	height: 100%;
 	padding-left: 32px;
 }
 
 .dot {
 	position: absolute;
-	background-color: rgb(89, 0, 114);
+	background-color: #24034e;
 	border-radius: 100px;
 	height: 7px;
 	width: 7px;
-	
 }
 
 .repeat-end .dot {
@@ -243,7 +243,7 @@ button {
 
 @media screen and (max-width: 56rem) {
 	html {
-		font-size: 12px;
+		font-size: 11px;
 	}
 
 	header h1 {
